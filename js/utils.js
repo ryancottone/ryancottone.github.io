@@ -19,6 +19,7 @@ for (let div of freezeframes) {
 // Copy email to clipboard
 
 let emailLink = document.getElementById('intro-email-link');
+if (emailLink) {
 let emaillinkTooltip = new bootstrap.Tooltip(emailLink,
     {
       'trigger': 'manual',
@@ -43,3 +44,4 @@ emailLink.addEventListener('click', () => {
     emaillinkTooltip.hide()
   }, 1000);
 });
+}
